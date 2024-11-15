@@ -109,6 +109,7 @@ nav.sticky .menu-btn{
 
 /* home section styling */
 .home{
+  position: relative;
   height: 100vh;
   width: 100%;
   background: url("images/background.png") no-repeat;
@@ -517,4 +518,43 @@ footer .text span a:hover{
     font-size: 50px;
     color: #4070f4;
   }
+}
+/* Add Animation Styles */
+[data-aos] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+[data-aos][data-aos][data-aos] {
+  opacity: 1;
+}
+
+/* Custom Cursor */
+body {
+  cursor: url('images/custom-cursor.png'), auto;
+}
+
+/* Progress Bars */
+.skills-details .box .bar {
+  height: 10px;
+  background: #00ff73;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.skills-details .box .bar span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: #4070f4;
+  transition: width 1s ease;
+}
+
+/* Particles Background */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Behind content */
 }
